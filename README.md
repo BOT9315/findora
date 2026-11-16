@@ -76,12 +76,53 @@ The app features a custom procedural animation sequence:
 
 ## 📦 Download & Installation
 
-The branded package is compiled and ready for installation:
+## 📥 Download the App
 
-- **Download APK:** [`C:\Users\akrk0\Downloads\Findora.apk`](file:///C:/Users/akrk0/Downloads/Findora.apk) *(~196 MB, includes offline TFLite models)*
-- **Project Build Output:** [`build\app\outputs\flutter-apk\app-debug.apk`](file:///C:/Users/akrk0/.gemini/antigravity/scratch/find_my_stuff_ai/build/app/outputs/flutter-apk/app-debug.apk)
+**[⬇️ Download Findora APK](https://github.com/BOT9315/findora/releases/latest/download/Findora.apk)**
 
-### Install via ADB:
+1. On your Android phone, tap the download link above. The APK will download.
+2. Once it's downloaded, open the file. If Android asks for "Install unknown apps" permission, allow it for your browser or file manager.
+3. Tap Install, then open the app.
+
+> This is a direct link from GitHub Releases, so the APK starts downloading as soon as you tap it.
+
+Other options:
+
+| Option | Where to get it | Notes |
+|--------|-----------------|-------|
+| **Latest release** | [GitHub Releases](https://github.com/BOT9315/findora/releases/latest) | All release versions and notes |
+| **Build from source** | See the steps below | For developers; requires Flutter 3.47+ |
+
+> **Size:** The APK is about 196 MB because it includes offline TFLite models.
+
+### Install on Android
+
+1. Download `Findora.apk` from the [latest release](https://github.com/BOT9315/findora/releases/latest).
+2. On your phone, allow installs from your browser or file manager (**Settings > Apps > Special access > Install unknown apps**).
+3. Open the APK and tap **Install**.
+
+### Install via ADB (optional)
+
 ```bash
-& "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe" install -r "C:\Users\akrk0\Downloads\Findora.apk"
+adb install -r Findora.apk
 ```
+
+### Build from source
+
+```bash
+git clone https://github.com/BOT9315/findora.git
+cd findora
+flutter pub get
+flutter build apk --debug   # output: build/app/outputs/flutter-apk/app-debug.apk
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+## 👤 Developer & Credits
+
+- **Project**: Findora (`com.findmystuff.ai.find_my_stuff_ai`)
+- **Author**: Ankush Kumar
